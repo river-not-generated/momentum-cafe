@@ -1,1 +1,1 @@
-isCollided = false;
+isCollided = true;

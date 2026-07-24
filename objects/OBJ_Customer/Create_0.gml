@@ -7,9 +7,10 @@ enum ServeState{
 	NotServed,
 	ReceivedOrder,
 	Served,
-	Done
+	Seated,
+	Leaving
 }
-var target;
+target = obj_counter;
 
 
 order = array_create(0);

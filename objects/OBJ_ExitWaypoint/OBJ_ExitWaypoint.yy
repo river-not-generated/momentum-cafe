@@ -1,17 +1,15 @@
 {
   "$GMObject":"",
-  "%Name":"OBJ_Customer",
+  "%Name":"OBJ_ExitWaypoint",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":2,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"OBJ_Customer",
+  "name":"OBJ_ExitWaypoint",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"Invis",
+    "path":"folders/Objects/Invis.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -32,8 +30,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"SPR_FillerChar",
-    "path":"sprites/SPR_FillerChar/SPR_FillerChar.yy",
+    "name":"SPR_Waypoint",
+    "path":"sprites/SPR_Waypoint/SPR_Waypoint.yy",
   },
   "spriteMaskId":null,
   "visible":true,

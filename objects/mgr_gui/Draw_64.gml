@@ -1,7 +1,7 @@
 draw_set_font(font);
 draw_set_colour(c_white);
 // draw the ticket
-draw_sprite(spr_ticket, 0, 250, 0);
+//draw_sprite(spr_ticket, 0, 250, 0);
 
 // write out each item in the player's inventory if they're holding anything
 var inv = obj_player.inventory;

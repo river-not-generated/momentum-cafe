@@ -8,6 +8,15 @@ function chooseTable() {
 	}
 }
 
+function chooseCounter(){
+	for (var i = 0; i < array_length(global.counters); i++){
+		if (global.counters[i].isCollided == false){
+			global.counters[i].isCollided = true;
+			return global.counters[i];
+		}
+	}
+}
+
 function place_order(customer) {
 	// the maximum number of items a customer can order is the player's carry capacity
 	// if the player doesn't exist for some reason then cap at 3 items

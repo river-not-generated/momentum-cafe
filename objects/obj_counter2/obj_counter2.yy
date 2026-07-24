@@ -1,19 +1,22 @@
 {
   "$GMObject":"",
-  "%Name":"OBJ_Customer",
+  "%Name":"obj_counter2",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":2,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"OBJ_Customer",
-  "overriddenProperties":[],
+  "name":"obj_counter2",
+  "overriddenProperties":[
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_interactable","path":"objects/obj_interactable/obj_interactable.yy",},"propertyId":{"name":"interact_from","path":"objects/obj_interactable/obj_interactable.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"Direction.LEFT",},
+  ],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"Invis",
+    "path":"folders/Objects/Invis.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"obj_interactable",
+    "path":"objects/obj_interactable/obj_interactable.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -32,8 +35,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"SPR_FillerChar",
-    "path":"sprites/SPR_FillerChar/SPR_FillerChar.yy",
+    "name":"spr_counter",
+    "path":"sprites/spr_counter/spr_counter.yy",
   },
   "spriteMaskId":null,
   "visible":true,
