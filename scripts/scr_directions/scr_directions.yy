@@ -1,9 +1,9 @@
 {
   "$GMScript":"v1",
-  "%Name":"SCR_ChooseTable",
+  "%Name":"scr_directions",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"SCR_ChooseTable",
+  "name":"scr_directions",
   "parent":{
     "name":"Scripts",
     "path":"folders/Scripts.yy",

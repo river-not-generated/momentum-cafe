@@ -8,8 +8,8 @@
   "name":"OBJ_Waypoint5",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"Invis",
+    "path":"folders/Objects/Invis.yy",
   },
   "parentObjectId":null,
   "persistent":false,

@@ -1,11 +1,11 @@
 {
   "$GMObject":"",
-  "%Name":"OBJ_Waypoint1",
+  "%Name":"obj_interactable",
   "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":64,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"OBJ_Waypoint1",
+  "name":"obj_interactable",
   "overriddenProperties":[],
   "parent":{
     "name":"Objects",
@@ -25,13 +25,15 @@
   "physicsShape":1,
   "physicsShapePoints":[],
   "physicsStartAwake":true,
-  "properties":[],
+  "properties":[
+    {"$GMObjectProperty":"v2","%Name":"interact_from","filters":[],"listItems":[],"multiselect":false,"name":"interact_from","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"Direction.FRONT","varType":4,},
+  ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"SPR_Waypoint",
-    "path":"sprites/SPR_Waypoint/SPR_Waypoint.yy",
+    "name":"spr_interactable",
+    "path":"sprites/spr_interactable/spr_interactable.yy",
   },
   "spriteMaskId":null,
   "visible":true,

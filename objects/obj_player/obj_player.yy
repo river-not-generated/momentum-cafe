@@ -4,6 +4,7 @@
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":{"name":"obj_interactable","path":"objects/obj_interactable/obj_interactable.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
   "name":"obj_player",
@@ -31,7 +32,9 @@
     {"$GMObjectProperty":"v2","%Name":"down_sprite","filters":[],"listItems":[],"multiselect":false,"name":"down_sprite","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resource":{"name":"spr_charlie_down","path":"sprites/spr_charlie_down/spr_charlie_down.yy",},"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"spr_charlie_down","varType":5,},
     {"$GMObjectProperty":"v2","%Name":"side_sprite","filters":[],"listItems":[],"multiselect":false,"name":"side_sprite","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resource":{"name":"spr_charlie_side","path":"sprites/spr_charlie_side/spr_charlie_side.yy",},"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"spr_charlie_side","varType":5,},
     {"$GMObjectProperty":"v2","%Name":"chr_speed","filters":[],"listItems":[],"multiselect":false,"name":"chr_speed","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"10","varType":1,},
-    {"$GMObjectProperty":"v2","%Name":"walking","filters":[],"listItems":[],"multiselect":false,"name":"walking","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"True","varType":3,},
+    {"$GMObjectProperty":"v2","%Name":"can_interact","filters":[],"listItems":[],"multiselect":false,"name":"can_interact","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"False","varType":3,},
+    {"$GMObjectProperty":"v2","%Name":"current_character","filters":[],"listItems":[],"multiselect":false,"name":"current_character","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"SetCharacter.CHARLIE","varType":4,},
+    {"$GMObjectProperty":"v2","%Name":"name","filters":[],"listItems":[],"multiselect":false,"name":"name","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"Charlie","varType":2,},
   ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
