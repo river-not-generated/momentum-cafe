@@ -4,3 +4,4 @@ global.combo = 0;
 
 global.player_health = 100;
 global.max_health = 100;
+global.current_character = SetCharacter.CHARLIE;

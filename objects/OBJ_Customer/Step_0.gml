@@ -97,10 +97,10 @@ switch(serveState) {
 		break;
 		
 	case ServeState.Seated:
-		
 	break;
 		
 	case ServeState.Leaving:
+		target.isCollided = false;
 		target = OBJ_ExitWaypoint;
 		if (instance_exists(target))
 		{

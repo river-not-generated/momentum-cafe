@@ -34,7 +34,7 @@ function compare_order() {
 				if (array_length(obj_player.inventory) != array_length(customer.order)) 
 					return false;
 				// and then return false if there is a mismatch
-				for (var i = 0; i < array_length(customer.order); i++) {
+				for (var j = 0; j < array_length(customer.order); j++) {
 					if (customer.order[i] != obj_player.inventory[i]) {
 						return false;
 					}
