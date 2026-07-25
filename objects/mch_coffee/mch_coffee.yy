@@ -31,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_interactable",
-    "path":"sprites/spr_interactable/spr_interactable.yy",
+    "name":"spr_coffee_machine",
+    "path":"sprites/spr_coffee_machine/spr_coffee_machine.yy",
   },
   "spriteMaskId":null,
   "visible":true,

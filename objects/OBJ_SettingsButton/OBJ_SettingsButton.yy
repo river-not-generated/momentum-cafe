@@ -3,6 +3,8 @@
   "%Name":"OBJ_SettingsButton",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":4,"eventType":6,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":10,"eventType":6,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":11,"eventType":6,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
   "name":"OBJ_SettingsButton",
@@ -33,8 +35,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"SPR_FillerOBJ",
-    "path":"sprites/SPR_FillerOBJ/SPR_FillerOBJ.yy",
+    "name":"spr_settingsbutton",
+    "path":"sprites/spr_settingsbutton/spr_settingsbutton.yy",
   },
   "spriteMaskId":null,
   "visible":true,
