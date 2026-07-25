@@ -1,17 +1,17 @@
 // check if the player is facing the machine (dependent on the machine itself)
 switch (sprite_index) {
 	case up_sprite:
-		can_interact = other.interact_from == Direction.FRONT;
+		can_interact = other.interact_from != Direction.BACK;
 		break;
 	case down_sprite:
-		can_interact = other.interact_from == Direction.BACK;
+		can_interact = other.interact_from != Direction.FRONT;
 		break;
 	case side_sprite:
 		if (image_xscale == -1) {
-			can_interact = other.interact_from == Direction.RIGHT;
+			can_interact = other.interact_from != Direction.LEFT;
 		}
 		else {
-			can_interact = other.interact_from == Direction.LEFT;
+			can_interact = other.interact_from != Direction.RIGHT;
 		}
 		break;
 	default:
@@ -57,6 +57,7 @@ if (can_interact && keyboard_check_pressed(global.key_accept)) {
 					global.player_health = max(0, global.player_health - ceil(10 * health_loss));
 					global.combo = 0;
 					reset_flow();
+					mgr_flow_state.update_flow();
 				}
 				if (array_length(inventory) > 0) array_delete(inventory, 0, array_length(inventory));
 			}

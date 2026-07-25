@@ -30,6 +30,10 @@
   "physicsStartAwake":true,
   "properties":[
     {"$GMObjectProperty":"v2","%Name":"customer_score","filters":[],"listItems":[],"multiselect":false,"name":"customer_score","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"10","varType":0,},
+    {"$GMObjectProperty":"v2","%Name":"up_sprite","filters":[],"listItems":[],"multiselect":false,"name":"up_sprite","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resource":{"name":"SPR_FillerChar","path":"sprites/SPR_FillerChar/SPR_FillerChar.yy",},"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"SPR_FillerChar","varType":5,},
+    {"$GMObjectProperty":"v2","%Name":"down_sprite","filters":[],"listItems":[],"multiselect":false,"name":"down_sprite","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resource":{"name":"SPR_FillerChar","path":"sprites/SPR_FillerChar/SPR_FillerChar.yy",},"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"SPR_FillerChar","varType":5,},
+    {"$GMObjectProperty":"v2","%Name":"side_sprite","filters":[],"listItems":[],"multiselect":false,"name":"side_sprite","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resource":{"name":"SPR_FillerChar","path":"sprites/SPR_FillerChar/SPR_FillerChar.yy",},"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"SPR_FillerChar","varType":5,},
+    {"$GMObjectProperty":"v2","%Name":"favourite_item","filters":[],"listItems":[],"multiselect":false,"name":"favourite_item","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"Item.COFFEE","varType":4,},
   ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",

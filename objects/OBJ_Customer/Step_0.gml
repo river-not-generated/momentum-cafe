@@ -33,18 +33,22 @@ switch(serveState) {
 				}
 		    }
 			move_and_collide(dx, dy, target);
-			
+			set_sprite_direction();
 			}
 		}
-		
 		if (x == old_x && y == old_y)
 		{
 			target.isCollided = true;
 		    serveState = ServeState.NotServed;
+			sprite_index = side_sprite;
+			image_xscale = -1;
+			image_speed = 0;
+			image_index = 0;
 			show_debug_message("Not Served");
 			place_order(self);
 			bubble = instance_create_layer(x - 4, y - 10, "Effects", obj_text_bubble);
 		}
+
 		break;
 		
 	case ServeState.NotServed:
@@ -52,12 +56,20 @@ switch(serveState) {
 		break;
 		
 	case ServeState.ReceivedOrder:
+		image_speed = 1;
 		show_debug_message("Going to table");
 		target.isCollided = false;
 		//Choose table based on which tables are full
 		target = chooseTable();
 		serveState = ServeState.Served;
 		instance_destroy(bubble);
+		break;
+		
+	case ServeState.DeniedFood:
+		target.isCollided = false;
+		image_speed = 1;
+		instance_destroy(bubble);
+		serveState = ServeState.Leaving;
 		break;
 		
 	case ServeState.Served:	
@@ -86,21 +98,25 @@ switch(serveState) {
 				}
 		    }
 			move_and_collide(dx, dy, target);
-			
+			set_sprite_direction();
 			}
 		}
 		if (x == xNew && y == yNew){
 			serveState = ServeState.Seated;
+			sprite_index = side_sprite;
+			image_xscale = 1;
+			image_speed = 0;
+			image_index = 0;
 			show_debug_message("Seated");
 			alarm[0] = game_get_speed(gamespeed_fps) * 5 / global.speed_mod;
 		}
 		break;
 		
 	case ServeState.Seated:
+		
 	break;
 		
 	case ServeState.Leaving:
-		target.isCollided = false;
 		target = OBJ_ExitWaypoint;
 		if (instance_exists(target))
 		{
@@ -122,6 +138,7 @@ switch(serveState) {
 					}
 				}
 				move_and_collide(dx, dy, target);
+				set_sprite_direction();
 			} else {
 				show_debug_message("dead");
 				instance_destroy();

@@ -15,8 +15,9 @@ function place_order(customer) {
 	var items = irandom(max_items - 1) + 1;
 	
 	for (var i = 0; i < items; i++) {
-		customer.order[i] = Item.COFFEE;
-		//customer.order[i] = irandom(Item.TOTAL - 1);
+	//	customer.order[i] = Item.COFFEE;
+		if (irandom(1) == 0) customer.order[i] = customer.favourite_item;
+		else customer.order[i] = irandom(Item.TOTAL - 1);
 		show_debug_message(customer.order[i]);
 	}
 	
@@ -25,21 +26,24 @@ function place_order(customer) {
 
 /// Returns -1 if no customer is not waiting; otherwise returns a boolean corresponding to whether the player's inventory matches the customer's order.
 function compare_order() {
-	if (instance_exists(OBJ_Customer)) {
+	if (instance_exists(OBJ_Customer) && array_length(obj_player.inventory) > 0) {
 		for (var i = 0; i < instance_number(OBJ_Customer); i++) {
 			var customer = instance_nth_nearest(obj_player.x, obj_player.y, OBJ_Customer, i + 1);
 			if (customer.serveState == ServeState.NotServed) {
-				customer.serveState = ServeState.ReceivedOrder;
 				// return false if the player's inventory count doesn't match the customer's
-				if (array_length(obj_player.inventory) != array_length(customer.order)) 
+				if (array_length(obj_player.inventory) != array_length(customer.order)) {
+					customer.serveState = ServeState.DeniedFood;
 					return false;
+				}
 				// and then return false if there is a mismatch
 				for (var j = 0; j < array_length(customer.order); j++) {
-					if (customer.order[i] != obj_player.inventory[i]) {
+					if (customer.order[j] != obj_player.inventory[j]) {
+						customer.serveState = ServeState.DeniedFood;
 						return false;
 					}
 				}
 				// if it hasn't returned yet then they match, return true
+				customer.serveState = ServeState.ReceivedOrder;
 				global.player_score += ceil((array_length(customer.order) * customer.customer_score) * obj_player.score_multiplier * global.speed_mod);
 				return true;
 			}

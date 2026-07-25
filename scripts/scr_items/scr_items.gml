@@ -1,8 +1,8 @@
 // the items a customer can order
 enum Item {
-	FRAPPE,
-	CAPPUCCINO,
+	COCOA,
 	COFFEE,
-	ICED,
+	ESPRESSO,
+	LATTE,
 	TOTAL
 }

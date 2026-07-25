@@ -2,7 +2,7 @@
   "$GMSprite":"v2",
   "%Name":"spr_ticket",
   "bboxMode":0,
-  "bbox_bottom":84,
+  "bbox_bottom":72,
   "bbox_left":0,
   "bbox_right":63,
   "bbox_top":0,

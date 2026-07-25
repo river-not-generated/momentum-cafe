@@ -12,17 +12,18 @@ if (inv != undefined && array_length(inv) > 0) {
 	for (var i = 0; i < array_length(inv); i++) {
 		var text = "Mystery Drink";
 		switch (inv[i]) {
-			case Item.CAPPUCCINO:
-				text = "Cappuccino";
+			case Item.COCOA:
+				text = "Cocoa";
 				break;
 			case Item.COFFEE:
 				text = "Coffee";
 				break;
-			case Item.FRAPPE:
-				text = "Frappe";
 				break;
-			case Item.ICED:
-				text = "Iced";
+			case Item.ESPRESSO:
+				text = "Espresso";
+				break;
+			case Item.LATTE:
+				text = "Latte";
 				break;
 		}
 		draw_text(260, (12 * i) + 21, text);
