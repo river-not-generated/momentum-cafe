@@ -14,8 +14,8 @@
     "path":"folders/Objects/Invis.yy",
   },
   "parentObjectId":{
-    "name":"obj_interactable",
-    "path":"objects/obj_interactable/obj_interactable.yy",
+    "name":"obj_counter",
+    "path":"objects/obj_counter/obj_counter.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,

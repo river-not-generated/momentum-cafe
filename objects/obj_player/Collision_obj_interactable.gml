@@ -21,7 +21,8 @@ switch (sprite_index) {
 
 // if they are facing the machine they can interact with it
 if (can_interact && keyboard_check_pressed(global.key_accept)) {
-	if (other.object_index == obj_machine) {
+	show_debug_message(other.object_index);
+	if (other.object_index == obj_machine || object_get_parent(other.object_index) == obj_machine) {
 	// if machine, give the item that machine gives if your hand isn't full
 		if (array_length(inventory) < max_capacity) {
 			array_insert(inventory, array_length(inventory), other.gives);
@@ -39,21 +40,25 @@ if (can_interact && keyboard_check_pressed(global.key_accept)) {
 		}
 		audio_play_sound(global.interact_sound, 10, false);
 	}
-	else if (other.object_index == obj_counter) {
+	else if (other.object_index == obj_counter || object_get_parent(other.object_index) == obj_counter) {
 		if (instance_exists(OBJ_Customer)) {
-			var customer = instance_nearest(obj_player.x, obj_player.y, OBJ_Customer);
-			var result = compare_order(customer);
-			if (result != 0) {
+			var result = compare_order();
+			if (result != -1) {
+				// successful order - award points, increase combo, reset flow timer
 				if (result) {
 					audio_play_sound(global.interact_sound, 10, false);
 					show_debug_message("good job");
+					global.combo += 1;
+					mgr_flow_state.update_flow();
 				}
 				else if (!result) {
 					audio_play_sound(global.error_sound, 20, false);
 					show_debug_message("order was incorrect >:(");
+					global.player_health = max(0, global.player_health - ceil(10 * health_loss));
+					global.combo = 0;
+					reset_flow();
 				}
-				customer.serveState = ServeState.ReceivedOrder;
-				array_delete(inventory, 0, array_length(inventory));
+				if (array_length(inventory) > 0) array_delete(inventory, 0, array_length(inventory));
 			}
 		}
 	}

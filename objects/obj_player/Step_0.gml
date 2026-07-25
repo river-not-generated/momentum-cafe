@@ -1,20 +1,3 @@
-// swap current character (replace with menu toggle later)
-if (keyboard_check_pressed(ord("1"))) {
-	current_character = chooseCharacter();
-
-	if (current_character == SetCharacter.CHARLIE) {
-		up_sprite = spr_charlie_up;
-		down_sprite = spr_charlie_down;
-		side_sprite = spr_charlie_side;
-		name = "Charlie";
-	} else if (current_character == SetCharacter.LUCAS) {
-		up_sprite = spr_lucas_up;
-		down_sprite = spr_lucas_down;
-		side_sprite = spr_lucas_side;
-		name = "Lucas";
-	}
-}
-
 // check if the player is pressing the movement keys
 var _left = (keyboard_check(global.key_left));
 var _right = (keyboard_check(global.key_right));
@@ -54,7 +37,7 @@ else if (dx > 0) {
 }
 
 
-move_and_collide(dx, dy, global.tileset_collision, 4, undefined, undefined, 1, 1);
+move_and_collide(dx, dy, global.tileset_collision, 4, undefined, undefined, chr_speed, chr_speed);
 
 // only animate if walking
 if (walking) image_speed = 1;

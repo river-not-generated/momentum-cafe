@@ -6,8 +6,8 @@
   "name":"obj_machine",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"Machines",
+    "path":"folders/Objects/Machines.yy",
   },
   "parentObjectId":{
     "name":"obj_interactable",
