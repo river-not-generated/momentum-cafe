@@ -8,6 +8,7 @@
     {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"OBJ_Customer","path":"objects/OBJ_Customer/OBJ_Customer.yy",},"propertyId":{"name":"up_sprite","path":"objects/OBJ_Customer/OBJ_Customer.yy",},"resource":{"name":"spr_jaden_up","path":"sprites/spr_jaden_up/spr_jaden_up.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"spr_jaden_up",},
     {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"OBJ_Customer","path":"objects/OBJ_Customer/OBJ_Customer.yy",},"propertyId":{"name":"down_sprite","path":"objects/OBJ_Customer/OBJ_Customer.yy",},"resource":{"name":"spr_jaden_down","path":"sprites/spr_jaden_down/spr_jaden_down.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"spr_jaden_down",},
     {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"OBJ_Customer","path":"objects/OBJ_Customer/OBJ_Customer.yy",},"propertyId":{"name":"side_sprite","path":"objects/OBJ_Customer/OBJ_Customer.yy",},"resource":{"name":"spr_jaden_side","path":"sprites/spr_jaden_side/spr_jaden_side.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"spr_jaden_side",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"OBJ_Customer","path":"objects/OBJ_Customer/OBJ_Customer.yy",},"propertyId":{"name":"favourite_item","path":"objects/OBJ_Customer/OBJ_Customer.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"Item.COCOA",},
   ],
   "parent":{
     "name":"Customers",

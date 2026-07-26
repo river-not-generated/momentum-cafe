@@ -6,6 +6,7 @@
   "name":"mch_espresso",
   "overriddenProperties":[
     {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_machine","path":"objects/obj_machine/obj_machine.yy",},"propertyId":{"name":"gives","path":"objects/obj_machine/obj_machine.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"Item.ESPRESSO",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_interactable","path":"objects/obj_interactable/obj_interactable.yy",},"propertyId":{"name":"interact_from","path":"objects/obj_interactable/obj_interactable.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"Direction.RIGHT",},
   ],
   "parent":{
     "name":"Machines",
@@ -33,8 +34,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_interactable",
-    "path":"sprites/spr_interactable/spr_interactable.yy",
+    "name":"spr_espresso_machine",
+    "path":"sprites/spr_espresso_machine/spr_espresso_machine.yy",
   },
   "spriteMaskId":null,
   "visible":true,

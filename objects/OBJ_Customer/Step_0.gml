@@ -40,6 +40,8 @@ switch(serveState) {
 		{
 			target.isCollided = true;
 		    serveState = ServeState.NotServed;
+			x = floor(x);
+			y = floor(y);
 			sprite_index = side_sprite;
 			image_xscale = -1;
 			image_speed = 0;
@@ -103,6 +105,8 @@ switch(serveState) {
 		}
 		if (x == xNew && y == yNew){
 			serveState = ServeState.Seated;
+			x = floor(x);
+			y = floor(y);
 			sprite_index = side_sprite;
 			image_xscale = 1;
 			image_speed = 0;

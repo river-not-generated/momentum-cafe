@@ -3,7 +3,7 @@
   "%Name":"spr_counter",
   "bboxMode":2,
   "bbox_bottom":11,
-  "bbox_left":-18,
+  "bbox_left":-24,
   "bbox_right":3,
   "bbox_top":-8,
   "collisionKind":1,

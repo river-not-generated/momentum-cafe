@@ -8,6 +8,7 @@
     {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"OBJ_Customer","path":"objects/OBJ_Customer/OBJ_Customer.yy",},"propertyId":{"name":"up_sprite","path":"objects/OBJ_Customer/OBJ_Customer.yy",},"resource":{"name":"spr_selene_up","path":"sprites/spr_selene_up/spr_selene_up.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"spr_selene_up",},
     {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"OBJ_Customer","path":"objects/OBJ_Customer/OBJ_Customer.yy",},"propertyId":{"name":"down_sprite","path":"objects/OBJ_Customer/OBJ_Customer.yy",},"resource":{"name":"spr_selene_down","path":"sprites/spr_selene_down/spr_selene_down.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"spr_selene_down",},
     {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"OBJ_Customer","path":"objects/OBJ_Customer/OBJ_Customer.yy",},"propertyId":{"name":"side_sprite","path":"objects/OBJ_Customer/OBJ_Customer.yy",},"resource":{"name":"spr_selene_side","path":"sprites/spr_selene_side/spr_selene_side.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"spr_selene_side",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"OBJ_Customer","path":"objects/OBJ_Customer/OBJ_Customer.yy",},"propertyId":{"name":"favourite_item","path":"objects/OBJ_Customer/OBJ_Customer.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"Item.LATTE",},
   ],
   "parent":{
     "name":"Customers",

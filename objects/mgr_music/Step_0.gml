@@ -1,7 +1,9 @@
 switch (global.game_state) {
 	case GameState.GAMESTART:
 		if (!game_music_playing) {
+			audio_stop_sound(bgm_title);
 			game_music_playing = true;
+			title_music_playing = false;
 			audio_play_sound(global.bass, 50, true);
 			audio_play_sound(global.guitar, 50, true);
 			audio_play_sound(global.xylo, 50, true);
@@ -14,7 +16,10 @@ switch (global.game_state) {
 		}
 		break;
 	case GameState.DEAD:
-		audio_stop_all();
+		audio_stop_sound(global.bass);
+		audio_stop_sound(global.guitar);
+		audio_stop_sound(global.xylo);
+		audio_stop_sound(global.piano);
 		game_music_playing = false;
 		break;
 	case GameState.GAMEOVER:
@@ -25,6 +30,11 @@ switch (global.game_state) {
 		}
 		break;
 	case GameState.TITLE:
-		audio_stop_all();
+		if (!title_music_playing) {
+			audio_stop_sound(global.piano);
+			game_over_playing = false;
+			title_music_playing = true;
+			audio_play_sound(bgm_title, 50, true);
+		}
 		break;
 }

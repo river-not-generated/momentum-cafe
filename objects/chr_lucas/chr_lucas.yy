@@ -12,6 +12,7 @@
     {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},"propertyId":{"name":"side_sprite","path":"objects/obj_player/obj_player.yy",},"resource":{"name":"spr_lucas_side","path":"sprites/spr_lucas_side/spr_lucas_side.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"spr_lucas_side",},
     {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},"propertyId":{"name":"name","path":"objects/obj_player/obj_player.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"Lucas",},
     {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},"propertyId":{"name":"score_multiplier","path":"objects/obj_player/obj_player.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"1.2",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},"propertyId":{"name":"timer_mod","path":"objects/obj_player/obj_player.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"1.2",},
   ],
   "parent":{
     "name":"Players",

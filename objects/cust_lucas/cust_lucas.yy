@@ -8,6 +8,7 @@
     {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"OBJ_Customer","path":"objects/OBJ_Customer/OBJ_Customer.yy",},"propertyId":{"name":"up_sprite","path":"objects/OBJ_Customer/OBJ_Customer.yy",},"resource":{"name":"spr_lucas_up","path":"sprites/spr_lucas_up/spr_lucas_up.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"spr_lucas_up",},
     {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"OBJ_Customer","path":"objects/OBJ_Customer/OBJ_Customer.yy",},"propertyId":{"name":"down_sprite","path":"objects/OBJ_Customer/OBJ_Customer.yy",},"resource":{"name":"spr_lucas_down","path":"sprites/spr_lucas_down/spr_lucas_down.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"spr_lucas_down",},
     {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"OBJ_Customer","path":"objects/OBJ_Customer/OBJ_Customer.yy",},"propertyId":{"name":"side_sprite","path":"objects/OBJ_Customer/OBJ_Customer.yy",},"resource":{"name":"spr_lucas_side","path":"sprites/spr_lucas_side/spr_lucas_side.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"spr_lucas_side",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"OBJ_Customer","path":"objects/OBJ_Customer/OBJ_Customer.yy",},"propertyId":{"name":"favourite_item","path":"objects/OBJ_Customer/OBJ_Customer.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"Item.COFFEE",},
   ],
   "parent":{
     "name":"Customers",

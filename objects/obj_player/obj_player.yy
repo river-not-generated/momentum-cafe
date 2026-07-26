@@ -37,6 +37,7 @@
     {"$GMObjectProperty":"v2","%Name":"name","filters":[],"listItems":[],"multiselect":false,"name":"name","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"Player","varType":2,},
     {"$GMObjectProperty":"v2","%Name":"health_loss","filters":[],"listItems":[],"multiselect":false,"name":"health_loss","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"1.0","varType":0,},
     {"$GMObjectProperty":"v2","%Name":"score_multiplier","filters":[],"listItems":[],"multiselect":false,"name":"score_multiplier","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"1.0","varType":0,},
+    {"$GMObjectProperty":"v2","%Name":"timer_mod","filters":[],"listItems":[],"multiselect":false,"name":"timer_mod","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"1","varType":0,},
   ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",

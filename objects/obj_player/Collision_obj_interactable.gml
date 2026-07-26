@@ -46,15 +46,17 @@ if (can_interact && keyboard_check_pressed(global.key_accept)) {
 			if (result != -1) {
 				// successful order - award points, increase combo, reset flow timer
 				if (result) {
-					audio_play_sound(global.interact_sound, 10, false);
+					audio_play_sound(snd_correct, 10, false);
 					show_debug_message("good job");
 					global.combo += 1;
 					mgr_flow_state.update_flow();
 				}
 				else if (!result) {
-					audio_play_sound(global.error_sound, 20, false);
+					audio_play_sound(snd_incorrect, 20, false);
+					audio_play_sound(snd_hurt, 20, false);
+					mgr_gui.flash_hurt_border();
 					show_debug_message("order was incorrect >:(");
-					global.player_health = max(0, global.player_health - ceil(10 * health_loss));
+					global.player_health = max(0, global.player_health - ceil(20 * health_loss));
 					global.combo = 0;
 					reset_flow();
 					mgr_flow_state.update_flow();
